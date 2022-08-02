@@ -1,0 +1,22 @@
+# If true, a sound will be played when the player is teleported to
+# their home.
+play-sound: true
+
+# If play-sound is true, this sound will be played when a player
+# uses /home. See here for a list of available sounds:
+# https://minecraft.fandom.com/wiki/Sounds.json#Sound_events
+teleport-sound: entity.enderman.teleport
+
+# If true, the player's velocity will be reset when teleporting.
+# This prevents fall damage if the player used /home while falling.
+reset-velocity: false
+
+messages:
+  players-only: "This command can only be used by players."
+  no-permission: "&cYou do not have permission to use this command."
+  home-set: "&3ⓘ&7 Home set: &b%s"
+  home-exists: "&3ⓘ&7 You already have a home named &b%s&7"
+  home-deleted: "&3ⓘ&7 Home deleted: &b%s&7"
+  home-not-found: "&3ⓘ&7 Home not found."
+  no-homes: "&3ⓘ&7 You have no homes."
+  teleport: "&3ⓘ&7 Teleported to &b%s"
