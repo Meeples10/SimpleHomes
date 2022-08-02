@@ -1,0 +1,47 @@
+name: SimpleHomes
+main: io.github.meeples10.simplehomes.Main
+version: %PROJECT_VERSION%
+author: Meeples10
+description: %PROJECT_DESCRIPTION%
+api-version: 1.19
+commands:
+  sethome:
+    description: Set a home.
+    usage: /sethome [name]
+    permission: simplehomes.sethome
+    default: true
+  home:
+    description: Teleport to a home.
+    usage: /home [name]
+    permission: simplehomes.home
+    default: true
+  homes:
+    description: List your homes.
+    usage: /homes [page]
+    permission: simplehomes.list
+    default: true
+  delhome:
+    description: Delete a home.
+    usage: /delhome <name>
+    permission: simplehomes.delhome
+    default: true
+permissions:
+  simplehomes.*:
+    description: Allows access to all SimpleHomes commands
+    children:
+      simplehomes.sethome
+      simplehomes.home
+      simplehomes.homes
+      simplehomes.delhome
+  simplehomes.sethome:
+    description: Allows players to set homes
+    default: true
+  simplehomes.home:
+    description: Allows players to teleport to their homes
+    default: true
+  simplehomes.homes:
+    description: Allows players to list their homes
+    default: true
+  simplehomes.delhome:
+    description: Allows players to delete homes
+    default: true
