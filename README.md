@@ -6,8 +6,8 @@ A small plugin that allows players to set homes.
 
 |Command|Description|Permission|
 |-------|-----------|----------|
-|`/home [name]`|Teleports you to a home. If no name is provided, the name `home` will be used.|`simplehomes.home`|
-|`/sethome [name]`|Sets a home. If no name is provided, the home will be named `home`.|`simplehomes.sethome`|
+|`/home [name]`|Teleports you to a home. If no name is provided, the name *home* will be used.|`simplehomes.home`|
+|`/sethome [name]`|Sets a home. If no name is provided, the home will be named *home*.|`simplehomes.sethome`|
 |`/delhome <name>`|Deletes a home.|`simplehomes.delhome`|
 |`/homes`|Lists your homes.|`simplehomes.homes`|
 
@@ -21,5 +21,5 @@ The default configuration file can be found [here](https://github.com/Meeples10/
 |---|-----------|
 |`play-sound`|If true, a sound will be played when the player is teleported to their home.|
 |`teleport-sound`|If play-sound is true, this sound will be played when a player uses `/home`. See [the Minecraft Wiki](https://minecraft.fandom.com/wiki/Sounds.json#Sound_events) for a list of available sounds.|
-|`reset-velocity`|If true, the player's velocity will be reset when teleporting. This prevents fall damage if the player used `/home` while falling.|
+|`reset-velocity`|If true, the player's velocity will be reset when teleporting. This prevents fall damage if the player uses `/home` while falling.|
 |`messages`|Messages displayed by the plugin.|
